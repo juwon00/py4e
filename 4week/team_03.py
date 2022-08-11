@@ -1,35 +1,12 @@
 def wrong_guest_book(file):
-    file_path = "guest_book.txt"
-
-    with open(file_path) as f:
-        lines = f.read().splitlines()
-
-    print(lines[3:6])
-    print(len(lines[1]))
-
-
-
-    for i in range(0,len(lines)):
-        if len(lines[i]) != 16:
-            print(lines[i])
-
-
-
-    # for line in file:
-    #     line = line.rstrip()
-    #     print(line)
-
-
-        # len(file.readlines()) = 파일전체의 줄 길이
-    # print(len(file.readlines()))
-
-
-
+    for j in file:
+        i = j.split("\n")[0]
+        n, m = i.split(",")
+        if m[3] != "-" or m[8] != "-" or len(m) != 13 or m[:3] != "010":
+            print("잘못 쓴 사람: " + str(n))
+            print("잘못 쓴 번호: " + str(m) + "\n")
 
 
 guest_book = open('guest_book.txt')
 
-# try:
 wrong_guest_book(guest_book)
-# except:
-#     print("잘못쓴사람:")
