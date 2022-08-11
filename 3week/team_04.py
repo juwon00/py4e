@@ -10,7 +10,7 @@ for i in range(n,m+1):
         if i%k == 0:
             check = check + 1
 
-    if check <= 2:
+    if check == 2:
         count = count + 1
 
 print("소수 개수:",count)
