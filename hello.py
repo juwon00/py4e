@@ -1,8 +1,6 @@
-a = int(input())
-b = int(input())
-c = int(input())
+num1 = [1, 2, 3, 4]
+num2 = [5, 6, 7, 8]
+num1.append(num2)
 
-print((a+b)%c)
-print(((a%c) + (b%c))%c)
-print((a*b)%c)
-print(((a%c) * (b%c))%c)
+print(num1)
+print(len(num1))
