@@ -1,9 +1,11 @@
-def grader(s,a):
+def grader(student,answer):
+    
+    print(student)
     
     name = list()
     num = list()
     for k in range(0,5):
-        n,m = s[k].split(',')
+        n,m = student[k].split(',')
         name.append(n)
         num.append(m)
         num[k] = list(num[k])
@@ -12,7 +14,7 @@ def grader(s,a):
     for i in range(0,5):
         count = 0
         for j in range(0,10):
-            if a[j] == num[i][j]:
+            if answer[j] == num[i][j]:
                 count = count + 10
         grade.append(count)
         
