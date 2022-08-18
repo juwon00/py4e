@@ -16,16 +16,22 @@ for line in hand:
         # else:
         #     di[w] = 1
         
+        
+        
         # if the key is not there th count is zero
+        
         # oldcount = di.get(w,0)
         # print(w, 'old', oldcount)
         # newcount = oldcount + 1
         # di[w] = newcount
         # print(w, 'new', newcount)
         
+        
+        
         # idiom: retrieve/create/update counter
         di[w] = di.get(w,0) + 1
         # print(w, di[w])
+
 
 # now we want to find the most common word
 largest = -1
