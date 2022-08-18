@@ -1,6 +1,3 @@
-from multiprocessing.sharedctypes import Value
-
-
 fname = input('Enter File: ')
 
 if len(fname) < 1:
