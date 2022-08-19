@@ -1,5 +1,6 @@
+import random
+
 def guess_numbers():
-    import random
 
     num_list = list()
     while True: # 조건1 - 숫자는 0 ~ 100까지 숫자를 3개 만듭니다(중복 불가).
