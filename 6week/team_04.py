@@ -10,23 +10,31 @@ p3=[]
 p4=[]
 p5=[]
 p6=[]
-for i in range(0,6):
-    p1.append(info[i])
-    p2.append(info[i])
-    p3.append(info[i])
-    p4.append(info[i])
-    p5.append(info[i])
-    p6.append(info[i])
+for i in info:
+    if len(p1) <= 5:
+        p1.append(i)
+    else:
+        if len(p2) <= 5:
+            p2.append(i)
+        else:
+            if len(p3) <= 5:
+                p3.append(i)
+            else:
+                if len(p4) <= 5:
+                    p4.append(i)
+                else:
+                    if len(p5) <= 5:
+                        p5.append(i)
+                    else:
+                        if len(p6) <= 5:
+                            p6.append(i)
 
 print(p1)
 print(p2)
-print(p1)
-print(p1)
-print(p1)
-print(p1)
-
-    
-    
+print(p3)
+print(p4)
+print(p5)
+print(p6)
 
 
 id_li = []
@@ -70,6 +78,8 @@ lis = sorted(lis,reverse=True)
 
 print(lis)
 
+print(lis[0])
+
 # print("{"+f"'아이디':{id_li},'나이':{age_li},'전화번호':{phone_li},'성별':{gender_li},'지역':{area_li},'구매횟수':{purchase_li}"+"}")
 
-print("할인쿠폰을 받을 회원정보 아이디:")
+# print("할인쿠폰을 받을 회원정보 아이디:")
